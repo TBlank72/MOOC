@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="NotesStyleSheet.css" media="screen">
+</head>
+<body>
+	<div class="hbox">
+	<h1>Forms Notes</h1>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Forms</h2></div>
+		<p><b>Forms</b> are text boxes, radio boxes, check boxes, etc.  Form 
+		tags look like this: <br>
+			<pre>
+			&ltform&gt
+			&lt/form&gt 
+			</pre>
+			<div class="hbox"><h2>&ltinput&gt</h2></div>
+			Form tags contain other elements that will construct the specific type of 
+			form you want to create.  &ltinput&gt is one element that can be included 
+			and the result of &ltform&gt&ltinput&gt&lt/form&gt would look like <form>
+			<input></form>
+			<div class="hbox"><h2>&ltinput&gt attributes</h2></div>
+			The input tag, &ltinput&gt, can take a few attributes.  Name is one of them 
+			and it would look like this: &ltform&gt&ltinput name ="name"&gt&lt/form&gt.  
+			Type is another attribute for Input.  It could look like this:  &ltform&gt&ltinput 
+			type ="Submit"&gt&lt/form&gt and would display like this: <form><input 
+			type="Submit"></form><br> The two together look like this:  
+			<form>
+				<input name="q">
+				<input type="Submit">
+			</form><br>
+			and would be coded like this: 
+			<pre>
+			&ltform&gt
+				&ltinput name ="q"&gt
+				&ltinput type ="Submit"&gt
+			&lt/form&gt
+			</pre>
+			<div class="hbox"><h2>&ltform action=" "&gt</h2></div>
+			Form has takes its own attribute, Action, that controls where you want the form 
+			to submit to.  The Following is a form tag with the action attribute set submit to 
+			/foo:
+			<pre>
+			&ltform action="/foo"&gt
+				&ltinput name ="q"&gt
+				&ltinput type ="Submit"&gt
+			&lt/form&gt 
+			</pre>
+			&ltform action="http://google.com/search"&gt will send whatever is entered in 
+			the form to google's search page and return the results.  
+			<div class="hbox"><h2>&ltinput type="password"&gt</h2></div>
+			"Text" is the default 
+			type parameter in a form's input tag.  Before, the input was text, so this was fine, 
+			however, if you want to take a password, the form input would look like: 
+			<pre>
+			&ltform&gt
+				&ltinput type="password" name ="q"&gt
+				&ltinput type ="Submit"&gt
+			&lt/form&gt
+			</pre>
+			And the input into the form is hidden as you type it.
+			<form>
+				<input type="password" name="q">
+				<input type="submit">
+			</form>
+			The input is still in the URL however, so this doesn't mean the password is 
+			secure.  
+			<div class="hbox"><h2>&ltinput type="checkbox"&gt</h2></div>
+			Another input type is checkbox.  It is coded like the following:
+			<pre>
+			&ltform&gt
+				&ltinput type="checkbox" name ="q"&gt
+				&ltinput type ="Submit"&gt
+			&lt/form&gt
+			</pre>
+			and displays like:
+			<form>
+				<input type="checkbox" name="q">
+				<input type="submit">
+			</form>
+			When checked, the "q parameter" is changed to "on". Normally there will 
+			be more than one input needed, so there will be multiple checkboxes like 
+			so:
+				<pre><br>
+			&ltform&gt
+				&ltinput type="checkbox" name ="q"&gt item1
+				&ltinput type="checkbox" name ="r"&gt item2
+				&ltinput type="checkbox" name ="s"&gt item3
+				&lt br &gt 
+				&ltinput type ="Submit"&gt
+			&lt/form&gt
+				</pre>
+			and displays like:
+			<form>
+				<input type="checkbox" name="q">item1
+				<input type="checkbox" name="r">item2
+				<input type="checkbox" name="s">item3
+				<br>
+				<input type="submit">
+			</form>
+			<div class="hbox"><h2>&ltinput type="radio"&gt</h2></div>
+			Another input type is a radio button.  Radio buttons are coded like:
+			<pre>
+			&ltform&gt 
+				&ltinput type="radio" name ="q"&gt
+				&ltinput type="radio" name ="r"&gt
+				&ltinput type="radio" name ="s"&gt
+				&lt br &gt 
+				&ltinput type ="Submit"&gt 
+			&lt/form&gt 
+				</pre>
+			And display like:
+			<form>
+				<input type="radio" name="q">
+				<input type="radio" name="r">
+				<input type="radio" name="s">
+				<br>
+				<input type="submit">
+			</form>
+			Radio buttons act like checkboxes unless you give the Radio buttons 
+			the same name.  When they have the same name, you are asking for 
+			one answer, and not allowing more than one.  Look at the difference 
+			in the radio buttons below vs the radio buttons above.
+			<form>
+				<input type="radio" name="q">
+				<input type="radio" name="q">
+				<input type="radio" name="q">
+				<br>
+				<input type="submit">
+			</form>
+			The first set of radio buttons had the q, r, and s names.  The 2nd set 
+			all have the name q.  However, we need a way to distinguish between 
+			which choice was selected.  To do this, we add a value attribute like the 
+			following:
+			<pre>
+			&ltform&gt 
+				&ltinput type="radio" name ="q" value="one"&gt
+				&ltinput type="radio" name ="r" value="two"&gt 
+				&ltinput type="radio" name ="s" value="three"&gt
+				&lt br &gt 
+				&ltinput type ="Submit"&gt 
+			&lt/form&gt 
+			</pre>
+			And the display looks the same.  However, look at the difference in the 
+			URL changes when clicking the radio buttons below:
+			<form>
+				<input type="radio" name="q" value="one">
+				<input type="radio" name="q" value="two">
+				<input type="radio" name="q" value="three">
+				<br>
+				<input type="submit">
+			</form>
+			Notice how ?q=one, ?q=two, or  ?q=three is added to the URL.  But, 
+			the user needs to see what they are chosing.  Enter the label elements.
+			<div class="hbox"><h2>&ltlabel&gt &lt/label&gt</h2></div>
+			&ltlabel&gt &lt/label&gt elements surround the input element that you 
+			want to give that lable to like the following:
+			<pre>
+				&ltform&gt 
+					&ltlabel&gt
+						one
+						&ltinput type="radio" name ="q" value="one"&gt
+					&lt/label&gt
+					&ltlabel&gt
+						two
+						&ltinput type="radio" name ="r" value="two"&gt
+					&lt/label&gt						
+					&ltlabel&gt
+						three
+						&ltinput type="radio" name ="s" value="three"&gt
+					&lt/label&gt
+						&lt br &gt 
+					&ltinput type ="Submit"&gt 
+				&lt/form&gt 
+			</pre>
+			This will display like:
+			<form>
+				<label>
+					one
+					<input type="radio" name="q" value="one">
+				</label>
+				<label>
+					two
+					<input type="radio" name="q" value="two">
+				</label>
+				<label>
+					three
+					<input type="radio" name="q" value="three">
+				</label>
+				<br>
+				<input type="submit">
+			</form>
+			<div class="hbox"><h2>Dropdown boxes</h2></div>
+			Dropdown boxes use a &ltselect&gt tag.  They are formated like the 
+			following:
+			<pre>
+			&ltform&gt
+				&ltselect name="q"&gt
+					&ltoption value="1"&gt the number one &lt/option&gt
+					&ltoption value="2"&gt the number two &lt/option&gt
+					&ltoption value="3"&gt the number three &lt/option&gt
+				&lt/select&gt
+				&ltbr>
+				&ltinput type="submit"&gt
+			&lt/form&gt
+			</pre>
+			and are displayed like this:
+			<form>
+				<select name="q">
+					<option value="1"> the number one </option>
+					<option value="2"> the number two </option>
+					<option value="3"> the number three </option>
+				</select>
+				<br>
+				<input type="submit">
+			</form>
+		</p>
+	</div>
+	
+	</body>
+
+</html>

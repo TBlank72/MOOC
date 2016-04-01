@@ -1,0 +1,41 @@
+#EXTM3U
+#EXTINF:-1,ud032 - 01-Intro
+Lesson_1_Data_Extraction_Fundamentals/01-Intro.mp4
+#EXTINF:-1,ud032 - 02-Action_Time
+Lesson_1_Data_Extraction_Fundamentals/02-Action_Time.mp4
+#EXTINF:-1,ud032 - 03-Assessing_the_Quality_of_Data_Pt._1
+Lesson_1_Data_Extraction_Fundamentals/03-Assessing_the_Quality_of_Data_Pt._1.mp4
+#EXTINF:-1,ud032 - 04-Assessing_the_Quality_of_Data_Pt._2
+Lesson_1_Data_Extraction_Fundamentals/04-Assessing_the_Quality_of_Data_Pt._2.mp4
+#EXTINF:-1,ud032 - 05-Tabular_Formats
+Lesson_1_Data_Extraction_Fundamentals/05-Tabular_Formats.mp4
+#EXTINF:-1,ud032 - 06-CSV_Format
+Lesson_1_Data_Extraction_Fundamentals/06-CSV_Format.mp4
+#EXTINF:-1,ud032 - 07-Parsing_CSV_Files
+Lesson_1_Data_Extraction_Fundamentals/07-Parsing_CSV_Files.mp4
+#EXTINF:-1,ud032 - 08-Parsing_CSV_Files
+Lesson_1_Data_Extraction_Fundamentals/08-Parsing_CSV_Files.mp4
+#EXTINF:-1,ud032 - 09-Problematic_Line
+Lesson_1_Data_Extraction_Fundamentals/09-Problematic_Line.mp4
+#EXTINF:-1,ud032 - 10-Problematic_Line
+Lesson_1_Data_Extraction_Fundamentals/10-Problematic_Line.mp4
+#EXTINF:-1,ud032 - 11-Using_CSV_Module
+Lesson_1_Data_Extraction_Fundamentals/11-Using_CSV_Module.mp4
+#EXTINF:-1,ud032 - 12-Intro_to_XLRD
+Lesson_1_Data_Extraction_Fundamentals/12-Intro_to_XLRD.mp4
+#EXTINF:-1,ud032 - 13-Reading_Excel_Files
+Lesson_1_Data_Extraction_Fundamentals/13-Reading_Excel_Files.mp4
+#EXTINF:-1,ud032 - 14-Reading_Excel_Files
+Lesson_1_Data_Extraction_Fundamentals/14-Reading_Excel_Files.mp4
+#EXTINF:-1,ud032 - 15-Intro_to_JSON
+Lesson_1_Data_Extraction_Fundamentals/15-Intro_to_JSON.mp4
+#EXTINF:-1,ud032 - 16-Data_Modeling_in_JSON
+Lesson_1_Data_Extraction_Fundamentals/16-Data_Modeling_in_JSON.mp4
+#EXTINF:-1,ud032 - 17-JSON_Playground
+Lesson_1_Data_Extraction_Fundamentals/17-JSON_Playground.mp4
+#EXTINF:-1,ud032 - 18-Exploring_JSON
+Lesson_1_Data_Extraction_Fundamentals/18-Exploring_JSON.mp4
+#EXTINF:-1,ud032 - 19-Exploring_JSON
+Lesson_1_Data_Extraction_Fundamentals/19-Exploring_JSON.mp4
+#EXTINF:-1,ud032 - 20-Check_you_out
+Lesson_1_Data_Extraction_Fundamentals/20-Check_you_out.mp4

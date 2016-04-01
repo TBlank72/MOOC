@@ -1,0 +1,57 @@
+/*Notes Stylesheet*/
+
+body {
+	width: 960px;
+	position: relative;
+	margin: auto;
+	padding: 0px;
+	color: white;
+}
+
+.hbox {
+	padding: 1px;
+	margin: auto;
+	margin-bottom: 1px;
+	width: 80%;
+	background-color: #333366;
+	display: flex;
+	border-radius: 10px;
+}
+h1, h2, h3, h4, h5{
+	color: lightblue;
+	padding: 0px;
+	margin: auto;
+	
+}
+
+.pbox {
+	width: 700px;
+	padding: 5px;
+	background-color: #595959;
+	border: 1px solid blue;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 3px;
+}
+
+p {
+	color: white;
+	font-family: helvetica;
+}
+
+span {
+	font-style: italic;
+}
+
+a:link {
+	color: darkblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: #ffff66;
+}

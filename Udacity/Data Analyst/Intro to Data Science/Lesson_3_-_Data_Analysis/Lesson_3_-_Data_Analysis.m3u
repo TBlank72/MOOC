@@ -1,0 +1,93 @@
+#EXTM3U
+#EXTINF:-1,ud359 - 01-Welcome_to_Lesson_3
+Lesson_3_-_Data_Analysis/01-Welcome_to_Lesson_3.webm
+#EXTINF:-1,ud359 - 02-Statistical_Rigor_Part_1
+Lesson_3_-_Data_Analysis/02-Statistical_Rigor_Part_1.webm
+#EXTINF:-1,ud359 - 03-Statistical_Rigor_Part_2
+Lesson_3_-_Data_Analysis/03-Statistical_Rigor_Part_2.webm
+#EXTINF:-1,ud359 - 04-Kurt_Introduction
+Lesson_3_-_Data_Analysis/04-Kurt_Introduction.webm
+#EXTINF:-1,ud359 - 05-Why_Is_Stats_Useful
+Lesson_3_-_Data_Analysis/05-Why_Is_Stats_Useful.webm
+#EXTINF:-1,ud359 - 06-Statistical_Rigor_Exercise
+Lesson_3_-_Data_Analysis/06-Statistical_Rigor_Exercise.webm
+#EXTINF:-1,ud359 - 07-Statistical_Rigor_Exercise
+Lesson_3_-_Data_Analysis/07-Statistical_Rigor_Exercise.webm
+#EXTINF:-1,ud359 - 08-Statistical_Test
+Lesson_3_-_Data_Analysis/08-Statistical_Test.webm
+#EXTINF:-1,ud359 - 09-Statistical_Test
+Lesson_3_-_Data_Analysis/09-Statistical_Test.webm
+#EXTINF:-1,ud359 - 10-Introduction_to_Normal_Distribution
+Lesson_3_-_Data_Analysis/10-Introduction_to_Normal_Distribution.webm
+#EXTINF:-1,ud359 - 11-Normal_Distribution
+Lesson_3_-_Data_Analysis/11-Normal_Distribution.webm
+#EXTINF:-1,ud359 - 12-Normal_Distribution
+Lesson_3_-_Data_Analysis/12-Normal_Distribution.webm
+#EXTINF:-1,ud359 - 13-T_Test
+Lesson_3_-_Data_Analysis/13-T_Test.webm
+#EXTINF:-1,ud359 - 14-Welch_T_Test
+Lesson_3_-_Data_Analysis/14-Welch_T_Test.webm
+#EXTINF:-1,ud359 - 15-Calculating_T_And_Nu
+Lesson_3_-_Data_Analysis/15-Calculating_T_And_Nu.webm
+#EXTINF:-1,ud359 - 16-Calculating_T_And_Nu
+Lesson_3_-_Data_Analysis/16-Calculating_T_And_Nu.webm
+#EXTINF:-1,ud359 - 17-Welch_T_Test_in_Python
+Lesson_3_-_Data_Analysis/17-Welch_T_Test_in_Python.webm
+#EXTINF:-1,ud359 - 18-Welch_T_Test_in_Python
+Lesson_3_-_Data_Analysis/18-Welch_T_Test_in_Python.webm
+#EXTINF:-1,ud359 - 19-Welch_T_Test_Exercise
+Lesson_3_-_Data_Analysis/19-Welch_T_Test_Exercise.webm
+#EXTINF:-1,ud359 - 20-Welch_T_Test_Exercise
+Lesson_3_-_Data_Analysis/20-Welch_T_Test_Exercise.webm
+#EXTINF:-1,ud359 - 21-Non_Parametric_Test
+Lesson_3_-_Data_Analysis/21-Non_Parametric_Test.webm
+#EXTINF:-1,ud359 - 22-Non_Normal_Data
+Lesson_3_-_Data_Analysis/22-Non_Normal_Data.webm
+#EXTINF:-1,ud359 - 23-Definition_of_Non_Parametric_Test
+Lesson_3_-_Data_Analysis/23-Definition_of_Non_Parametric_Test.webm
+#EXTINF:-1,ud359 - 24-Definition_of_Non_Parametric_Test
+Lesson_3_-_Data_Analysis/24-Definition_of_Non_Parametric_Test.webm
+#EXTINF:-1,ud359 - 25-Just_the_Tip_of_the_Iceberg
+Lesson_3_-_Data_Analysis/25-Just_the_Tip_of_the_Iceberg.webm
+#EXTINF:-1,ud359 - 26-Predicting_Future_Data
+Lesson_3_-_Data_Analysis/26-Predicting_Future_Data.webm
+#EXTINF:-1,ud359 - 27-Predicting_Future_Data
+Lesson_3_-_Data_Analysis/27-Predicting_Future_Data.webm
+#EXTINF:-1,ud359 - 28-Why_Is_Machine_Learning_Useful
+Lesson_3_-_Data_Analysis/28-Why_Is_Machine_Learning_Useful.webm
+#EXTINF:-1,ud359 - 29-Stats_vs._Machine_Learning
+Lesson_3_-_Data_Analysis/29-Stats_vs._Machine_Learning.webm
+#EXTINF:-1,ud359 - 30-Different_Types_of_Learning
+Lesson_3_-_Data_Analysis/30-Different_Types_of_Learning.webm
+#EXTINF:-1,ud359 - 31-Kurts_Favorite_Machine_Learning_Algorithm
+Lesson_3_-_Data_Analysis/31-Kurts_Favorite_Machine_Learning_Algorithm.webm
+#EXTINF:-1,ud359 - 32-Prediction_With_Regression
+Lesson_3_-_Data_Analysis/32-Prediction_With_Regression.webm
+#EXTINF:-1,ud359 - 33-Linear_Regression_With_Gradient_Descent
+Lesson_3_-_Data_Analysis/33-Linear_Regression_With_Gradient_Descent.webm
+#EXTINF:-1,ud359 - 34-Linear_Regression_With_Gradient_Descent
+Lesson_3_-_Data_Analysis/34-Linear_Regression_With_Gradient_Descent.webm
+#EXTINF:-1,ud359 - 35-Cost_Function
+Lesson_3_-_Data_Analysis/35-Cost_Function.webm
+#EXTINF:-1,ud359 - 36-How_To_Minimize_Cost_Function
+Lesson_3_-_Data_Analysis/36-How_To_Minimize_Cost_Function.webm
+#EXTINF:-1,ud359 - 37-Gradient_Descent_in_Python
+Lesson_3_-_Data_Analysis/37-Gradient_Descent_in_Python.webm
+#EXTINF:-1,ud359 - 38-Gradient_Descent_in_Python
+Lesson_3_-_Data_Analysis/38-Gradient_Descent_in_Python.webm
+#EXTINF:-1,ud359 - 39-Coefficients_of_Determination
+Lesson_3_-_Data_Analysis/39-Coefficients_of_Determination.webm
+#EXTINF:-1,ud359 - 40-Calculating_R_Squared
+Lesson_3_-_Data_Analysis/40-Calculating_R_Squared.webm
+#EXTINF:-1,ud359 - 41-Calculating_R_Squared
+Lesson_3_-_Data_Analysis/41-Calculating_R_Squared.webm
+#EXTINF:-1,ud359 - 42-Other_Considerations
+Lesson_3_-_Data_Analysis/42-Other_Considerations.webm
+#EXTINF:-1,ud359 - 43-Kurts_Advice_for_Machine_Learning_Best_Practices
+Lesson_3_-_Data_Analysis/43-Kurts_Advice_for_Machine_Learning_Best_Practices.webm
+#EXTINF:-1,ud359 - 44-Kurts_Advices_for_Aspiring_Data_Scientist
+Lesson_3_-_Data_Analysis/44-Kurts_Advices_for_Aspiring_Data_Scientist.webm
+#EXTINF:-1,ud359 - 45-Assignment_3
+Lesson_3_-_Data_Analysis/45-Assignment_3.webm
+#EXTINF:-1,ud359 - 46-Lesson_3_Recap
+Lesson_3_-_Data_Analysis/46-Lesson_3_Recap.webm

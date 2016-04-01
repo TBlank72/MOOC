@@ -1,0 +1,14 @@
+*.mp4
+*.ogv
+*.wmv
+*.webm
+*.mov
+**/node_modules
+**/data
+*/node_modules
+*/data
+*/baseballDB
+**/baseballDB
+/node_modules
+/data
+/baseballDB

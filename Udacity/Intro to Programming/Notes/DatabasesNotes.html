@@ -1,0 +1,127 @@
+<!--Databases Notes-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="NotesStyleSheet.css" media="screen">
+</head>
+<body>
+	<div class="hbox">
+	<h1>Databases</h1>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Databases</h2></div>
+		<p>What is a database?  A <b>database</b> is a program that stores 
+		and retrieves <span>large amounts of structured</span> data.  Servers 
+		are also database servers, or there can be a specific server just for 
+		databases.  Database servers will comunicate with the server that is 
+		communicating with your browser.  
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Tables</h2></div>
+		<p><b>Tables</b> in a database are made up of columns and rows.  
+		Generally every row will have an ID in the first column.  Tables allow 
+		you to organize stored data for retrieval.  They may contain username, 
+		email, passwords, URL, etc.  Each time a user submits something on the 
+		site, a new row will be created with the new data, or data will be updated 
+		in a current row.
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Downside of Querrying Data</h2></div>
+		<p>
+			<ul>Downsides of querying data by hand(Python, etc):
+				<li> error-prone</li>
+				<li> tedious</li>
+				<li> slow</li>
+			</ul>  
+		Databases make querying data much easier and faster
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Types of Databases</h2></div>
+		<p>
+			<ul>Major Types of Databases
+				<li>SQL - (relational)</li>
+				Postgresql, MySQL, SQLite, Oracle($$$)
+				<li>Google AppEngine's Datastore</li>
+				Similar to SQL
+				<li>Dynamo - from Amazon</li>
+				completely different from SQL
+				<li>NoSQL</li>
+				Mongo, Couch - Try to solve limitations of SQL
+			</ul>  
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>SQL</h2></div>
+		<p>SQL or, <b>Structured Query Language</b>, is not really a 
+		programming language.  It's really a language for expressing queries.  
+		It was invented in the 1970's long before the Web.  A basic SQL query 
+		looks like this: <br>
+		SELECT * FROM links WHERE id = 5;<br>
+		<span>Select</span> means "fetch data". * means "all columns".  
+		links is the "table" you are fetching data from.  id = 5 is the "constraint."  
+		In plain english, this reads:  "Select all from links where id = 5".  
+		The first section, the [Select *], is what you're selecting.  It could say 
+		something like "Select URL, title" if you just want to querry URL and 
+		titles.  The from clause, [FROM links], is saying "from links table".  
+		The where clause, [Where id = 5], is referring to which <span>rows</span> 
+		in your table you want to return.  The WHERE Clause is not required 
+		if you want to return everything from your table.  The sqlite3 module 
+		lets you use SQL in python.  ORDER BY is another clause is SQL.  It 
+		could look like this: <br>
+		SELECT * FROM links<br>
+		WHERE votes > 10<br>
+		ORDER BY votes DESC<br>
+		The default order is ASC, ascending.  
+		</p>
+	</div>
+		<div class="pbox">
+		<div class="hbox"><h2>SQL Join Query</h2></div>
+		<p>You will normally have multiple tables of a variety of data.  You will 
+		probably always have a User table with user info.  ID should always be a 
+		value in your user table so that all other tables can have a User-ID column 
+		that matches any other data to the User.  The <b>SQL Joins</b> method 
+		just allows you to search for data in one table based on a value in another 
+		table.  Joins are not used very ofter, however, they are included in almost 
+		every SQL tutorial.  
+		</p>
+	</div>
+	</div>
+		<div class="pbox">
+		<div class="hbox"><h2>Indexes</h2></div>
+		<p>So far we've been using sequential scans, or looking through an entire 
+		list of something and, if we find what we are looking for, we return some 
+		value.  <b>Indexes</b> increase the speed of queries dramatically.  They 
+		are pretty much like a dictionary "key:value" pair in python.  Instead of 
+		asking to search through an entire list of something, you may tell is to 
+		return xyz[5].  So the program jumps straight to that index instead of 
+		iterating through the entire list.  
+		</p>
+	</div>
+		<div class="pbox">
+		<div class="hbox"><h2>ACID</h2></div>
+		<p>
+		<ul>
+			<li><b>A</b>tomicity - All parts of a transaction succeed or fail together.</li>
+			<li><b>C</b>onsistency - The database will always be consistent.  For 
+			example, any value that affects another should be updated within the same 
+			transaction.</li>
+			<li><b>I</b>solation - No transaction can interfere with, or affect, another.</li>
+			<li><b>D</b>urability - Once a transaction is comitted, it won't be lost.</li>
+		</ul>
+		There are always tradeoffs.  No database meets 100% of the ACID requirements.
+		</p>
+	</div>
+	</body>
+
+</html>
+
+
+
+
+
+
+

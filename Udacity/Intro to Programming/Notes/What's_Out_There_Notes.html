@@ -1,0 +1,166 @@
+<!--Databases Notes-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="NotesStyleSheet.css" media="screen">
+	
+</head>
+<body>
+	<div class="hbox">
+	<h1>What's Out There?</h1>
+	</div>
+	<div class="pbox">
+	<p><h3>A general overview of the following topics:</h3>
+		<ul>
+			<li>Using JavaScript to bring web pages to life</li>
+			<li>Using APIs to easily access powerful data</li>
+			<li>Two fascinating ideas in computing:  recursion and parallel computing</li>
+			<li>How to solve big problems</li>
+			<li>How to make web pages look good</li>
+		</ul>
+	</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>JavaScript</h2></div>
+		<p>JavaScript(JS) runs natively in in the browser.  Saving variables in 
+		JS and Python are the same except "var" must come before 
+		the variable name.  Ex: var firstName = "James".  All numbers in 
+		JS are saved as 64bit floating point variables.  Arrays, Functions, 
+		and Objects in JS all use the same syntax.  console.log is used to 
+		"print" an object to the console.  alert(), confirm, and prompt() will 
+		cause a pop-up window.  The console can be found in any 
+		browser in the dev tools section.  JS is inserted between &ltscript&gt 
+		&lt/script&gt tags.  Below this is a message that isn't visible in html, 
+		but will show up in the console.
+		<script>var awesomeThoughts = "Todd is awesome."  
+		console.log(awesomeThoughts)
+		</script><br>
+		<div class="hbox"><h3>JavaScript Replace</h3></div>
+		The replace function in JS can be very useful.  A simple example:<br> 
+		var email = "toddmblankenship@gmail.com"<br>
+		var newEmail = email.replace("nfsm", "gmail");<br>
+		console.log(email)<br>
+		console.log(newEmail)<br>
+		Check the console for the previous example in action.
+		<script>
+		var email = "toddmblankenship@gmail.com";
+		var newEmail = email.replace("gmail", "nfsm");
+		console.log(email);
+		console.log(newEmail);
+		</script>
+		<div class="hbox"><h3>Truthy / Falsy</h3></div>
+		<ul>
+			<li>true | false</li>
+			<li>non-zero numbers | 0</li>
+			<li>"strings" | "" (empty string)</li>
+			<li>objects | undefined (variable doesn't exist)</li>
+			<li>arrays | null (variable exist, but doesn't have a value)</li>
+			<li>functions | NaN (Not a Number)</li>
+			All evaluate to: true | false
+		</ul>
+		Arrays in JS behave the same way lists do in python.  Arrays are special 
+		types of objects in JS.  JS Doesn't Have Classes.  Objects can be declared 
+		and defined with var myObj = { };.  For example: (see console)<br>
+		<script>
+		var bio = {
+			"name" : "Todd",
+			"age" : 30,
+			"education" : "M.S.",
+			"skills" : "Programming, HTML, JS, Python, CSS"};
+		console.log(bio)
+		</script>
+		<div class="hbox"><h3>JSON</h3></div>
+		JSON, <b>JavaScript Object Notation</b>, is a popular and simple format 
+		for storing and transferring nesting hierarchal data.  In JS, we use {} to 
+		declare an object.  It's so popular that most other languages have libraries 
+		capable of parsing and writing JSON (like Python JSON library).  Internet 
+		GET and POST request frequently pass data in JSON format.  JSON allows 
+		for objects (or data of other types) to be easily encapsulated within other 
+		objects.  See MDN and JSON.org for more details.  <br>
+		<a href="http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/"> This</a> 
+		is a fantastic deep dive from Jason Lengstorf about JSON and its ubiquitous 
+		use in the form of <a href="http://en.wikipedia.org/wiki/Ajax_(programming)"> 
+		AJAX requests.</a><br>
+		WHY LINT JSON? If you're generating JSON by hand, you should copy and 
+		paste your JSON into a linter like jsonlint.com to quickly and easily find 
+		syntax errors.  It's easy to make mistakes with JSON.  JavaScript 
+		uses three primary notations:  [Bracket Notation], Dot.Notation, and 
+		"object" : "literal" notation.  Do a google search to see more details on 
+		the differences between them.  
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Data Structures and APIs</h2></div>
+		<p>
+		APIs, or <b>Application Programming Interface</b>, allows your server 
+		to communicate with other servers through HTTP without an HTML or 
+		browser format.  How do servers communicate?  It's best if servers do 
+		not communicate with HTML because HTML if very forgiving of errors.  
+		<b>XML</b> is one way servers can communicate and it was created 
+		in the late 1990s as a way of expressing data between computers 
+		systems.  It is easy to parse.  It looks a lot like html because they share 
+		a common ansestor, SGML, that was created in the 1980s.  You can 
+		parse XML in Python using:  from xml.dom import minidom.  DOM 
+		stands for Document Object Model.  <b>JSON</b>, JavaScript Object 
+		Notation, is another way servers can communicate.  Anything you can 
+		express in XML, you can express in JSON.  JSON uses dictionaries and 
+		lists.  They can include int, strings, boolean, floats, and nulls.  You can 
+		use JSON in Python with:  import json.  <b>How to be a good citizen 
+		on the internet.</b>  Use a good user-agent.  Rate-limit yourself.  
+		<ul>
+		Other common protocols and methods for communicating across the 
+		internet:
+			<li>SOAP - invented by MS to make communcation as difficult as 
+			possible.</li>
+			<li>Protocol buffers - from Google(similar to JSON)</li>
+			<li>Thrift - from Facebook</li>
+			<li> JSON - most popular</li>
+			<li>XML - ver popular as well</li>
+		</ul>
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Recursion and Parallel Computing</h2></div>
+		<p>
+			<ol>
+			<b>Recursive Definitions</b>
+				<li>Base case - a starting point</li>
+				Not defined in terms of itself.  Smallest input(already know the answer)
+				x = 1
+				<li>Recursive case - Defined in terms of a "smaller" version of itself</li>
+				x = x + 1
+			</ol>
+		Defining procedures recursively:<br>
+		factorial(0) = 1 (this is base case)<br>
+		factorial(n) = n * factorial(n-1) (this is recursive case)<br>
+		<b>Palindromes</b> are strings that read front-to-back the same as 
+		back-to-front.  Example:  "level", "a", " ".  To define a procedure to test 
+		if a string is a palindrome, your base case would be and empty string, ' '.  
+		<b>Map Reduce</b> processes data in parallel.  Parallel processing 
+		allows multiple items of a list to be processed at the same time.  Map 
+		Reduce uses multiple Mappers that process data at the same time .  
+		This is called Intermediate Records.  All records are in Key, Value pairs.  
+		Shuffle and Sort is then run on the Intermediate Records data before 
+		sending the sorted data to the Reducers.  Reducers then process all of 
+		the data of a certain key, so the value of key total will be the sum of 
+		all instances of the value of that key within the dataset.  
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Solving Big Problems</h2></div>
+		<p>
+		There are some big problems out there.  Some take a long time to 
+		solve.  Break them down into small steps.  
+		</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Making Web Pages Look Good</h2></div>
+		<p>
+		</p>
+	</div>
+	<div>
+		<a href="https://maps.googleapis.com/maps/api/staticmap?center=37.405,-122.08&zoom=13&size=640x400&path=weight:3%7Ccolor:blue%7Cenc:aofcFz_bhVJ[n@ZpAp@t@b@uA`FuAzEoCdJiDpLs@VM@y@s@oBcBkAw@cCoAuBu@eEaAiAa@iAi@w@a@o@g@g@k@e@u@uAaCc@i@w@y@eAo@i@UaBc@kAGo@@]JyKA}EC{G?q@?IGKCeGA{CAyCAyEAwEBaFAkJ?yGEyAIiLAiB?{@BcBJ}@@aBGwBEo@A@j@BjBFTHjEl@fOD`C?|@RARAJERWPL@FE^S`AI`A&key=MapKey1">sdaf</a>
+	</div>
+	</body>
+</html>

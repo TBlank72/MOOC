@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="NotesStyleSheet.css" media="screen">
+</head>
+<body>
+	<div class="hbox">
+	<h1>Networking Notes</h1>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Network</h2></div>
+		<p>A <b>network</b> is a group of entities that can communicate even though
+		they are not directly connected.  Two ways to measure networks are
+		latency and bandwith.  </p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Latency</h2></div>
+		<p><b>Latency</b> is the time that it takes for a message to get from the
+		source to the destination.  It's the duration of time between the time
+		the source starts sending to the time the receiver starts receiving.  
+		Measured in milliseconds (or sometimes seconds).  1000 milliseconds  
+		= 1 second.  </p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Bandwith</h2></div>
+		<p> <b>Bandwith</b> is the amount of information that can be 
+		transmitted per unit of time.  Rate of Information = Info / Time.  Measured 
+		in pits/sec.  More commonly on the internet it's measured in Megabits 
+		per second (Mbps) (or million bits per second).  You can test your bandwith 
+		with an internet speed test (cnet.com has one).</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Bit</h2></div>
+		<p>A <b>bit</b> is the smallest unit of information.  Two choices of bits 
+		are "0" and "1".  1 bit lets you make one decision (on/off, yes/no).  4 bits 
+		will allow you to encode 16 numbers.  Each bit you add doubles the number 
+		you can encode.  </p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Protocol</h2></div>
+		<p>A <b>protocol</b> is a set of rules that tell you how two things can 
+		communicate.  <b>Hypertext Transfer Protocol (HTTP)</b> is the protocol 
+		that is used on the web for clients to talk to servers.  Clients can send one 
+		message, "GET."  Servers then send a response back to the client.  </p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>URL</h2></div>
+		<p>A <b>URL (Uniform Resource Locator)</b> has a protocol, host, and 
+		path.  In http://www.udacity.com/path/path2/path3/, for example, the http is the protocol, the 
+		//www.udacity.com is the host (or domain), and the path is the document after 
+		the last "/".  URLs have <b>Query Parameters</b>, or a GET Parameters.  Query 
+		parameters are in the format of "Name = Value".  For example, in: <br>
+		http://example.com/foo?P=1<br>
+		The query parameter starts with a "?" followed by P, the name, then "=", then 
+		1, the name.  All Query parameters following the first one are separated by a 
+		"&" symbol like the following: <br>
+		http://example.com/foo?P=1&Q=neat<br>
+		P and 1 are the first Name and Value and Q and neat are the second Name and 
+		value.  Basically, these are extra information. </p> 
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Cache</h2></div>
+		<p>A <b>cache</b>, pronounced like cash, is something that stores data so that 
+		you don't have to retrieve it later.  It can be used to make data requests faster.  
+		<a href="http://computer.howstuffworks.com/cache1.htm">More Cache info</a> 
+		in this link.</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Fragment</h2></div>
+		<p>A <b>fragment</b> is separated from the rest of the URL with a "#".  A 
+		fragment is generally used to reference a particular part of the page you are 
+		looking at.  They can also be used in more complex JavaScript applications.  
+		The most important thing to know now is that fragments are NOT sent to the 
+		server.  They only exist in the browser.  Fragments always follow the query 
+		parameters like the following: <br>
+		http://example.com/foo?P=1#fragment<br></p>
+	</div>
+		<div class="pbox">
+		<div class="hbox"><h2>Port</h2></div>
+		<p>The <b>port</b> is located between the host and the path.  By default, 
+		the port = 80.  However, you can change the port for different purposes.  The 
+		port in the following example is 8000: <br>
+		http://localhost:<b>8000</b>/</br>
+		This URL will be our local development URL for a lot of this course and most of 
+		your development life.</p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>HTTP</h2></div>
+		<div class="hbox"><h4>HTTP Request Line and Headers</h4></div>
+		<p><b>Hypertext Transfer Protocol (HTTP)</b> is the what your browser 
+		uses to talk to web servers.  The <b>HTTP Request Line</b> has 3 parts:  
+		GET    /foo    HTTP/1.1.  1st is the Method, GET.  2nd is the Path, /foo, the actual 
+		document you are requesting.  3rd is the Version, HTTP/1.1.  Post is another 
+		less common method. In <b>http://example.com/foo/logo.png?P=1#tricky</b> 
+		the Request line is <b>GET  /foo/logo.png?P=1 HTTP/1.1 </b>.  Notice the 
+		host and the fragment are not included.  In the previous example, the relative 
+		path, /foo/logo.png?P=1, was given.  However, you could also specify the full 
+		path, or Absolute Path, which is http://example.com/foo/logo.png?p=1. 
+		
+		<b>Headers</b> follow the request line.  Headers are in the following format: 
+		Name: Value.  For example, the following are headers: <br>
+		Host: www.example.com<br>
+		User-Agent: chrome<br>
+		The host is included in a header because servers host multiple websites, so this 
+		tells the server what website you are requesting.  The user-agent tells the host 
+		who is accessing the website.  You can block unwanted users by blocking their 
+		user-agent.  You can make up all of the headers you want.  
+		<div class="hbox"><h4>HTTP Responses</h4></div>
+		<p>HTTP Responses looks similar to a request.  <b>HTTP/1.1 200 OK</b> 
+		is an example of a response.  HTTP/1.1 is the <b>status line</b>.  The version matches 
+		the version of the request line.  HTTP/1.1 is followed by 200, the <b>status code</b>, 
+		and OK, the <b>reason phrase</b>.
+		<ul> Status Codes:
+			<li>200 OK - The document is found</li>
+			<li>302 Found - The document is located somewhere else</li>
+			<li>404 Not found - The document wasn't found</li>
+			<li>500 Server Error - The server broke while handling your request</li>
+		</ul>
+		<ul>HTTP Response Headers
+			<li>Date: Tue Mar 2012 04:33:33 GMT</li>
+			<li>Server: Apache /2.2.3 (not required...use fake name to avoid hacks)</li>
+			<li>Content-Type: text/html;</li>
+			<li>Content-Length: 1539 (not required)</li>
+		</ul>
+		</p></p>
+	</div>
+	<div class="pbox">
+		<div class="hbox"><h2>Servers</h2></div>
+		<p>The purpose of a <b>server</b> is to respond to HTTP requests.  There 
+		2 main classifications to the responses a server will use:  Static and Dynamic.  
+		Static is a pre-written file or an image.  Dynamic request are made on the fly 
+		by web applications.  Almost all webpages are using dynamic requests.  
+		</p>
+	</div>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
